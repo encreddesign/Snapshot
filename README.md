@@ -10,3 +10,20 @@ $snapshot = Snapshot::forge('https://www.any.do/')->build()->getSnapshot();
 // converts to object
 $decoded = json_decode($snapshot);
 ```
+
+Object consits of the below properties
+```PHP
+$decoded->favicon
+
+$decoded->title
+
+$decoded->image
+
+$decoded->description
+
+$decoded->domain
+
+$decoded->siteUrl
+```
+
+If an error occurs then the ```$decoded->error``` property will be present
