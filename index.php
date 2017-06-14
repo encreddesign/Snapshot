@@ -2,7 +2,7 @@
 
   include_once('snapshot.php');
 
-  $snapshot = Snapshot::forge('https://www.any.do/')->build()->getSnapshot();
+  $snapshot = Snapshot::forge('http://encreddesign.github.io/')->build()->getSnapshot();
 
   $decoded = json_decode($snapshot);
 
